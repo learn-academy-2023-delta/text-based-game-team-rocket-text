@@ -31,9 +31,42 @@ The most important part of this project is the planning phase. Work with your te
 
 You need to decide how your user will interact with the code that you write. Every option you present will need to be followed with an action. If you choose to create multiple storylines your code base will need to reflect all the possible actions. Each storyline can be a unique adventure where some are successful and some are not.
 
+// Pokemon Themed
+//Boss fight 
+// little fights lead to a big fight
+// depending on the points you have by the end of the game will determine a win or lose
+//side quest to unlock special items that increase your chances of winning(power ups,items)
+// steal peoples pokemon(Grand Theft Pokemon)
+ //Boss modifiers update based on previous quest performances   
+//Final boss 
+
 ### Game Play
 
 The game will take place entirely in the terminal. All interactions between the user and the game are text-based. The user will see a story printed to the terminal and then be presented with options that the will determine the next phase of the story. The user will type their selection into the terminal.
+
+// attack, defend, run, evade
+// each pokemon has two different attacks(fast attack ,heavy attack)
+// 10 points health
+// light attack = 2 90%
+// heavy attck = 3 65%
+// evade (reduces the chances of you being attacked by 45% percent)
+// defend reduces damage by 1
+// run has a 65% chance to work
+//can decide which path you go (2 paths)
+// can find random items based off environments
+// can decide to engage in different instances that contain different rewards in their reward tables
+// Can hold four pokemon at once in backpack
+// Pokeballs: regular = 50%, ultra = 65%, master = 85%
+// Starter Pokemon: Charzard, Bublbasaur, Squirtle
+// Use captured as assist 
+// Can use items and some pokemon to heal
+// Items: healing juice, pheonix joint, winged shoes(dodge item),  
+
+
+// Story:
+// start at a House
+//Just had a conversation
+
 
 ### Tips and Tricks
 
