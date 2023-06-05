@@ -76,11 +76,7 @@ class Grass < Pokemon
     
 
 
-fire_pokemon = Fire.new("tester fire")
-puts fire_pokemon.health
-puts fire_pokemon.attack
-puts fire_pokemon.defense
-puts fire_pokemon.name
+
 
 puts 'Welcome to our world of pokemon!'.red
 sleep 1
@@ -105,17 +101,17 @@ while(choiceloop)
     puts "Choose your pokemon!"
     display_ascii_art('./AsciiArt/MonkeyMon.txt', :red) 
     puts 'This is MonkeyMon'
-    sleep 3
+    sleep 1
     system('clear')
 
     display_ascii_art('./AsciiArt/Leo.txt', :green) 
     puts 'This is Leo'
-    sleep 3
+    sleep 1
     system('clear')
 
     display_ascii_art('./AsciiArt/Squortle.txt', :blue) 
     puts 'This is Squortle'
-    sleep 3
+    sleep 1
     system('clear')
 
     
@@ -226,6 +222,7 @@ puts "What do you do with the stone? 1 for touch your #{pokemon_object.name} wit
         system('clear')
         puts "THE POKEMON EVOLVED!!!!"
         display_ascii_art("./AsciiArt/#{pokemon_object.file_name}2.txt", :red) 
+        sleep 2
     when "2"
         puts "#{pokemon_object.name} looks at the stone longingly"
     else 
@@ -244,3 +241,47 @@ else
 end
 
 puts "You and your pokemon continue walking until you are attacked by a wild pokemon!"
+sleep 1
+display_ascii_art('./AsciiArt/CharLizard.txt', :magenta) 
+puts 'CharLizard'
+
+char_lizard = ['❤️', '❤️','❤️','❤️','❤️','❤️','❤️','❤️','❤️','❤️']
+
+puts "You have entered mortal combat, what will you do? "
+    sleep 1
+
+while (char_lizard.length > 0)
+    puts char_lizard.join(" ")
+
+    puts " Will you fight to the death?" 
+
+    puts "What will you do? 1 - heavy attack, 2 - light attack, 3 -  defend yourself, 4 - evade, 5 - run away like a digitalMon  "
+    sleep 1
+    case gets.chomp
+
+    when "1"
+    pokemon_object.attack.times{char_lizard.pop}
+    puts "#{pokemon_object.name} throws a haymaker"
+
+    when "2"
+    (pokemon_object.attack - 1).times{char_lizard.pop}
+    puts "#{pokemon_object.name} slaps real hard"
+
+    when "3"
+
+    puts "#{pokemon_object.name} uses UNBREAKABLE GUARD"
+
+when "4"
+    puts "#{pokemon_object.name} side-steps incoming attack"
+
+    else
+    puts "#{pokemon_object.name} goes home to mamma. You wont catch em all like this."
+    sleep 1
+    # next
+    end
+end 
+
+puts "GAME OVER YOU WINN!!!!"
+sleep 3
+
+puts "Great job #{name} you and your #{pokemon_object.name} are victorious and live long healthy lives!"
